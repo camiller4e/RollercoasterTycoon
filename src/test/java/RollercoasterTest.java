@@ -6,10 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class RollercoasterTest {
 
     Rollercoaster rollercoaster;
+    Visitor visitor;
 
     @Before
     public void setUp() throws Exception {
         rollercoaster = new Rollercoaster("Chunder Mountain", 150, 5);
+        visitor = new Visitor("Clunt", 36, 120, 50);
     }
 
     @Test
@@ -25,5 +27,10 @@ public class RollercoasterTest {
     @Test
     public void canGetPrice() {
         assertEquals(5, rollercoaster.getPrice());
+    }
+
+    @Test
+    public void canCheckHeight() {
+        assertEquals(false, rollercoaster.checkHeight(visitor));
     }
 }

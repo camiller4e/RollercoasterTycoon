@@ -1,8 +1,8 @@
 public class Visitor {
     private String name;
-    private int age;
-    private int height;
-    private int scrilla;
+    public int age;
+    public int height;
+    public int scrilla;
 
     public Visitor(String name, int age, int height, int scrilla) {
         this.name = name;
