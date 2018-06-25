@@ -10,7 +10,7 @@ public class RollercoasterTest {
 
     @Before
     public void setUp() throws Exception {
-        rollercoaster = new Rollercoaster("Chunder Mountain", 150, 5);
+        rollercoaster = new Rollercoaster("Chunder Mountain", 150, 5, 4);
         visitor = new Visitor("Clunt", 36, 120, 50);
     }
 
@@ -32,5 +32,10 @@ public class RollercoasterTest {
     @Test
     public void canCheckHeight() {
         assertEquals(false, rollercoaster.checkHeight(visitor));
+    }
+
+    @Test
+    public void canGetReview(){
+        assertEquals("Chunder Mountain : 4", rollercoaster.review(rollercoaster.getRating(), rollercoaster.getName()));
     }
 }

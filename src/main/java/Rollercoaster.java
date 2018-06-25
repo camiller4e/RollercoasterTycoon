@@ -1,4 +1,4 @@
-public class Rollercoaster extends Attraction implements ISecurity {
+public class Rollercoaster extends Attraction implements ISecurity, IReviewed {
     private int minHeight;
     private int price;
 
@@ -22,5 +22,9 @@ public class Rollercoaster extends Attraction implements ISecurity {
             return true;
         }
         return false;
+    }
+
+    public String review(int getRating, String getName) {
+        return getName + " : " + getRating();
     }
 }

@@ -9,7 +9,7 @@ public class BurgerVanTest{
 
     @Before
     public void setUp() throws Exception {
-        burgerVan = new BurgerVan("The Meat Retreat", "Jenny Burgervan", 101);
+        burgerVan = new BurgerVan("The Meat Retreat", "Jenny Burgervan", 101, 3);
     }
 
     @Test

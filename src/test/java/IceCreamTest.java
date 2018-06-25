@@ -9,7 +9,7 @@ public class IceCreamTest {
 
     @Before
     public void setUp() throws Exception {
-        iceCreamStall = new IceCreamStall("The Iceman Cometh", "Jack Slushpants", 102);
+        iceCreamStall = new IceCreamStall("The Iceman Cometh", "Jack Slushpants", 102, 3);
     }
 
     @Test

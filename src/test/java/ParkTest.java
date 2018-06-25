@@ -9,7 +9,7 @@ public class ParkTest {
 
     @Before
     public void setUp() throws Exception {
-        park = new Park("Regular Park");
+        park = new Park("Regular Park", 3);
     }
 
     @Test

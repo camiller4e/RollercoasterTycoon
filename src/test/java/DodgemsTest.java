@@ -11,7 +11,7 @@ public class DodgemsTest {
 
     @Before
     public void setUp() throws Exception {
-        dodgems = new Dodgems("Captain Insanity's Death Buggies", 5, 10);
+        dodgems = new Dodgems("Captain Insanity's Death Buggies", 5, 10, 1);
         visitor1 = new Visitor("Jorp", 10, 90, 10);
         visitor2 = new Visitor("Clarn", 36, 190, 50);
     }
